@@ -1,2 +1,2 @@
-# ansible-role-zimbra
-Ansible role for zimbra mail server automation
+# ansible-role-zimbra-zmcontrol
+Ansible role for zimbra mail server zmcontrol command
