@@ -1,7 +1,7 @@
-Role Name
+Ansible Role: Zimbra zmcontrol
 =========
 
-A brief description of the role goes here.
+Ansible Role for zimbra mail service operation using zmcontrol command.
 
 Requirements
 ------------

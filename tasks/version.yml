@@ -1,10 +1,13 @@
 ---
-# tasks file for zmcontrol
+# tasks file for command zmcontrol -v
 
 - shell: zmcontrol -v
-  register: zmcontrol_version
+  become: yes
+  become_user: zimbra
+  become_method: sudo
+  become_flags: '-i'
+  register: result
   tags: zmcontrol_version
 
-- name: zmcontrol -v
-  debug:
-    var: zmcontrol_version.stdout
+- debug:
+    var: result.stdout

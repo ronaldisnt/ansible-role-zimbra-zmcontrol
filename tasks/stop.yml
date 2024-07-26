@@ -1,13 +1,13 @@
 ---
-# tasks file for command zmcontrol status
+# tasks file for command zmcontrol stop
 
-- shell: zmcontrol status
+- shell: zmcontrol stop
   become: yes
   become_user: zimbra
   become_method: sudo
   become_flags: '-i'
   register: result
-  tags: zmcontrol_status
+  tags: zmcontrol_stop
 
 - debug:
     var: result.stdout
