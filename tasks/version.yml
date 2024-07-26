@@ -1,0 +1,10 @@
+---
+# tasks file for zmcontrol
+
+- shell: zmcontrol -v
+  register: zmcontrol_version
+  tags: zmcontrol_version
+
+- name: zmcontrol -v
+  debug:
+    var: zmcontrol_version.stdout

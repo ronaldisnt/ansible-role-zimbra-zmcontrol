@@ -1,0 +1,10 @@
+---
+# tasks file for zmcontrol
+
+- name: zmcontrol {{ action }}
+  shell: zmcontrol {{ action }}
+  become: yes
+  become_user: zimbra
+  become_method: sudo
+  become_flags: '-i'
+  register: zmcontrol_result

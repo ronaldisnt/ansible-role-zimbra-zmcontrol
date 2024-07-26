@@ -1,0 +1,10 @@
+---
+# tasks file for zmcontrol
+
+- shell: zmcontrol status
+  register: zmcontrol_status
+  tags: zmcontrol_status
+
+- name: zmcontrol status
+  debug:
+    var: zmcontrol_status.stdout
