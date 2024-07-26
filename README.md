@@ -3,6 +3,8 @@ Ansible Role: Zimbra zmcontrol
 
 Ansible Role for zimbra mail service operation using zmcontrol command.
 
+ref: https://zimbra.github.io/documentation/zimbra-10/adminguide.html#_zmcontrol_startstoprestart_service
+
 Requirements
 ------------
 
