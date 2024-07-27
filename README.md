@@ -11,7 +11,7 @@ Requirements
 User used to connect to zimbra hosts should be able to become sudo su to zimbra user.
 You can test it using adhoc command:
 
-    [ronaldis@ansible-box ~]$ ansible -m shell -a "id" zimbra -b --become-user=zimbra
+    [ansible@ansible-box ~]$ ansible -m shell -a "id" zimbra -b --become-user=zimbra
     zimbra | CHANGED | rc=0 >>
     uid=987(zimbra) gid=987(zimbra) groups=987(zimbra),5(tty)
     
