@@ -3,7 +3,7 @@ Ansible Role: Zimbra zmcontrol
 
 Ansible Role for zimbra mail service operation using zmcontrol command.
 
-ref: https://zimbra.github.io/documentation/zimbra-10/adminguide.html#_zmcontrol_startstoprestart_service
+zmcontrol command reference: https://zimbra.github.io/documentation/zimbra-10/adminguide.html#_zmcontrol_startstoprestart_service
 
 Requirements
 ------------
@@ -45,7 +45,7 @@ Playbook example of how to use zmcontrol role
           tasks_from: status
 
       # Second method, using vars: action variable
-      # Available var action: -v, status, start, stop, restart, maintenance, shutdown, startup
+      # Available vars action: -v, status, start, stop, restart, maintenance, shutdown, startup
       - name: get zimbra service status
         include_role:
           name: zmcontrol
