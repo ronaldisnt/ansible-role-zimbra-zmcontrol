@@ -66,7 +66,7 @@ Playbook example of how to use zmcontrol role
 License
 -------
 
-BSD
+GNU General Public License v3.0
 
 Author Information
 ------------------
