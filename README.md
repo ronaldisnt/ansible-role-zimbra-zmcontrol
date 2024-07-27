@@ -8,7 +8,7 @@ ref: https://zimbra.github.io/documentation/zimbra-10/adminguide.html#_zmcontrol
 Requirements
 ------------
 
-User to connect zimbra hosts should be able to become sudo su to zimbra user.
+User used to connect to zimbra hosts should be able to become sudo su to zimbra user.
 You can test it using adhoc command:
 
     [ronaldis@ansible-box ~]$ ansible -m shell -a "id" zimbra -b --become-user=zimbra
