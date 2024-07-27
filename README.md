@@ -23,11 +23,39 @@ A list of other roles hosted on Galaxy should go here, plus any details in regar
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+Playbook example of how to use zmcontrol role
 
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
+    - hosts: zimbra
+      tasks:
+      # First method, using "task_from:"
+      - name: get zimbra version
+        include_role:
+          name: zmcontrol
+          tasks_from: version
+
+      - name: get zimbra service status
+        include_role:
+          name: zmcontrol
+          tasks_from: status
+
+      # Second method, using vars: action variable
+      # Available var action: -v, status, start, stop, restart, maintenance, shutdown, startup
+      - name: get zimbra service status
+        include_role:
+          name: zmcontrol
+        vars:
+          action: status
+      # Optional if you want the result output    
+      - debug:
+          var: result.stdout
+
+      - name: start zimbra service
+        include_role:
+          name: zmcontrol
+        vars:
+          action: start
+      - debug:
+          var: result.stdout
 
 License
 -------
