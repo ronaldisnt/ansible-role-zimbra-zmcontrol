@@ -1,7 +1,7 @@
 galaxy_info:
   role_name: zmcontrol
-  author: ronaldi santosa
-  description: ansible role for maintaining zimbra services using command zmcontrol
+  author: "ronaldi santosa"
+  description: "ansible role for maintaining zimbra services using command zmcontrol"
   company: homelab
 
   # If the issue tracker for your role is not on github, uncomment the
@@ -33,7 +33,7 @@ galaxy_info:
   #   - 7
   #   - 99.99
 
-  galaxy_tags: []
+  galaxy_tags:
     - zimbra
     - zmcontrol
     - linux
