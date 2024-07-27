@@ -8,7 +8,12 @@ ref: https://zimbra.github.io/documentation/zimbra-10/adminguide.html#_zmcontrol
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+User to connect zimbra hosts should be able to become sudo su to zimbra user.
+You can test it using adhoc command:
+
+ansible -m shell -a "id" zimbra -b --become-user=zimbra
+zimbra | CHANGED | rc=0 >>
+uid=987(zimbra) gid=987(zimbra) groups=987(zimbra),5(tty)
 
 Role Variables
 --------------
