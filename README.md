@@ -18,6 +18,7 @@ Role Variables
 --------------
 
 Available vars action: -v, status, start, stop, restart, maintenance, shutdown, startup
+
 zmcontrol command reference: https://zimbra.github.io/documentation/zimbra-10/adminguide.html#_zmcontrol_startstoprestart_service
 
 Dependencies
