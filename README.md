@@ -36,19 +36,19 @@ Playbook example of how to use zmcontrol role
       # First method, using "task_from:"
       - name: get zimbra version
         include_role:
-          name: zmcontrol
+          name: ronaldisnt.zmcontrol
           tasks_from: version
 
       - name: get zimbra service status
         include_role:
-          name: zmcontrol
+          name: ronaldisnt.zmcontrol
           tasks_from: status
 
       # Second method, using vars: action variable
       # Available vars action: -v, status, start, stop, restart, maintenance, shutdown, startup
       - name: get zimbra service status
         include_role:
-          name: zmcontrol
+          name: ronaldisnt.zmcontrol
         vars:
           action: status
       # Optional if you want the result output    
@@ -57,7 +57,7 @@ Playbook example of how to use zmcontrol role
 
       - name: start zimbra service
         include_role:
-          name: zmcontrol
+          name: ronaldisnt.zmcontrol
         vars:
           action: start
       - debug:
